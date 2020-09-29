@@ -14,7 +14,26 @@
 // -----------------------------------------------------------------
 function getLetterGrade(grades) {
   // grades is an array of numbers
+  let n = Math.ceil( grades.reduce((a, b) => (a + b)) / grades.length );
+
+    if(n < 60){
+      return 'F'
+    } else if(n < 70){
+      return 'D'
+    } else if(n < 80){
+      return 'C'
+    } else if(n < 90){
+      return 'B'
+    } else {
+      return 'A'
+    }
+  
+  
 }
+
+
+
+
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 

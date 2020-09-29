@@ -21,6 +21,22 @@
 // -----------------------------------------------------------------
 function findArmstrongNumbers(num1, num2) {
   // num1 and num2 are Numbers
+  let ans = [];
+  const Armstrong = n => {
+    let arr = n.toString().split("").map(el => parseInt(el))
+    let sumn = 0;
+    for (let i = 0; i <= arr.length - 1; i++) {
+      sumn += arr[i] ** arr.length;
+    }
+      return sumn;
+    }
+    for(let idx = num1; idx <= num2; idx++){
+      let anumber = Armstrong(idx);
+        if(anumber === idx){
+          ans.push(idx)
+        }
+    }
+    return ans
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

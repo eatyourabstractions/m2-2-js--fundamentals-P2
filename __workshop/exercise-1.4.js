@@ -15,8 +15,14 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
-function removeMiddleName(string) {
+function removeMiddleName(input) {
   // complete the function
+  let names = input.split(" ")
+  if(names.length >= 2){
+    return `${names[0]} ${names.pop()}`
+  } else {
+    return names[0]
+  }
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

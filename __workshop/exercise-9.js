@@ -10,6 +10,7 @@
 // -----------------------------------------------------------------
 function greetLong(list) {
   // list is an array of strings
+  return list.filter(it => it.length >= 4).map(el => `Hello ${el}`)
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

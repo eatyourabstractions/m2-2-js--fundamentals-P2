@@ -9,6 +9,10 @@
 // -----------------------------------------------------------------
 function filterNonUnique(arr) {
   // arr is an array of values of any type
+  const unique = (myarr, num) => {
+    return myarr.filter(n => n === num).length === 1
+  }
+  return [ ...new Set(arr.filter(el => unique(arr, el)))]
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

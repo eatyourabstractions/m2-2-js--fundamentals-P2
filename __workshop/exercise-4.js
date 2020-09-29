@@ -5,8 +5,10 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
-function calculateAverage(num1, num2, num3, num4, num5) {
+function calculateAverage(...nums) {
   // code here
+  let avg = nums.reduce((a, b) => (a + b)) / nums.length;
+  return Math.round(avg)
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

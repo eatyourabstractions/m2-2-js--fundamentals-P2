@@ -7,6 +7,8 @@
 // -----------------------------------------------------------------
 function calculateAverage(grades) {
   // grades is an array of numbers
+  let avg = grades.reduce((a, b) => (a + b)) / grades.length;
+  return Math.round(avg)
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

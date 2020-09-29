@@ -9,11 +9,14 @@
 // -----------------------------------------------------------------
 function greet(list) {
   // list is an array of strings
+  return list.map(it =>  `Hello ${it}`)
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 
-console.log(greet(["David", "Billy", "Lisa", "Jennifer"]));
+console.log(
+  greet(["David", "Billy", "Lisa", "Jennifer"])
+  );
 
 // Create more test cases.
 

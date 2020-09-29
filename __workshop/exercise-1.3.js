@@ -8,8 +8,10 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
-function characterCount(string) {
+function characterCount(input) {
   // complete the function
+  let spaces =  input.split(" ").length - 1
+  return input.split(" ").join("").split("").length + spaces
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

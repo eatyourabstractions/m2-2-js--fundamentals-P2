@@ -11,6 +11,11 @@
 // -----------------------------------------------------------------
 function removeStringFromArray(array, string) {
   // complete the function
+  const index = array.indexOf(string);
+      if (index > -1) {
+        array.splice(index, 1);
+    }
+    return array
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

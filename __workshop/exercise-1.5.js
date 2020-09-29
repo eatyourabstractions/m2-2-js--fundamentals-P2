@@ -12,8 +12,18 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
-function decodeMessage(string, notCode) {
+function decodeMessage(input, notCode) {
   // complete the function
+  let out = input.split(" ").map(x =>{
+    let res = x;
+    notCode.forEach(el => {
+      res = res.replace(el, '')
+    });
+    return res;
+  })
+ 
+  
+  return out.join(" ")
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

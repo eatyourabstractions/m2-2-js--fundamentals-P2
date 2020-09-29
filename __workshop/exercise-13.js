@@ -7,6 +7,7 @@
 // -----------------------------------------------------------------
 function countBs(str) {
   // str is a string
+  return str.split("").filter(ch => ch === 'B').length
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

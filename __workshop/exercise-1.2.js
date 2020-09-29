@@ -9,8 +9,9 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
-function arrOFNames(string) {
+function arrOFNames(input) {
   // complete the function
+  return input.split(", ")
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

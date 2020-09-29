@@ -9,6 +9,7 @@
 // -----------------------------------------------------------------
 function allLong(list) {
   // list is an array of strings
+  return list.filter(el => el.length >= 5).length === list.length
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
